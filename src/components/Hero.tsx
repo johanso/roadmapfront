@@ -41,8 +41,6 @@ export function Hero({ totalCompleted, onReset }: HeroProps) {
         </h1>
         <p className="hero-subtitle">
           {totalTopics} temas cuidadosamente seleccionados · {curriculum.length} fases · ~{totalDays} días
-          <br />
-          CSS moderno, JavaScript profundo, React, TypeScript, Next.js y más
         </p>
 
         <div className="hero-level-badge" style={{ borderColor: level.color, background: `${level.color}15` }}>

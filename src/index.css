@@ -297,7 +297,7 @@ body {
    =================================== */
 .hero {
   position: relative;
-  padding: 80px 60px 60px;
+  padding: 32px 40px 24px;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
@@ -312,25 +312,25 @@ body {
 .orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.15;
+  filter: blur(60px);
+  opacity: 0.12;
   animation: orb-float 8s ease-in-out infinite;
 }
 
 .orb-1 {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background: radial-gradient(circle, #6366f1, transparent);
-  top: -200px;
-  right: -100px;
+  top: -120px;
+  right: -80px;
   animation-delay: 0s;
 }
 
 .orb-2 {
-  width: 400px;
-  height: 400px;
+  width: 240px;
+  height: 240px;
   background: radial-gradient(circle, #8B5CF6, transparent);
-  bottom: -150px;
+  bottom: -100px;
   left: 20%;
   animation-delay: -3s;
 }
@@ -362,19 +362,19 @@ body {
   background: rgba(99, 102, 241, 0.12);
   border: 1px solid rgba(99, 102, 241, 0.3);
   color: var(--accent);
-  padding: 6px 14px;
+  padding: 4px 12px;
   border-radius: 50px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   letter-spacing: 0.02em;
 }
 
 .hero-title {
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(28px, 3.5vw, 40px);
   font-weight: 900;
   line-height: 1.1;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   letter-spacing: -0.03em;
 }
 
@@ -386,37 +386,37 @@ body {
 }
 
 .hero-subtitle {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text-secondary);
-  margin-bottom: 28px;
-  line-height: 1.7;
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
 
 .hero-level-badge {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 20px;
+  padding: 5px 14px;
   border-radius: 50px;
   border: 1px solid;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  margin-bottom: 36px;
+  margin-bottom: 14px;
   backdrop-filter: blur(10px);
 }
 
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 8px;
+  margin-bottom: 14px;
 }
 
 .hero-stat-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 16px;
+  padding: 8px;
   text-align: center;
   transition: all var(--transition);
 }
@@ -428,7 +428,7 @@ body {
 
 .hero-stat-value {
   display: block;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 800;
   background: linear-gradient(135deg, #6366f1, #8B5CF6);
   -webkit-background-clip: text;
@@ -439,24 +439,24 @@ body {
 
 .hero-stat-label {
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .hero-overall-progress {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .hero-progress-track {
-  height: 8px;
+  height: 6px;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 4px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .hero-progress-fill {
@@ -489,7 +489,7 @@ body {
   background: rgba(239, 68, 68, 0.1);
   border: 1px solid rgba(239, 68, 68, 0.3);
   color: #ef4444;
-  padding: 8px 18px;
+  padding: 5px 14px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 13px;
@@ -898,11 +898,7 @@ body {
    =================================== */
 @media (max-width: 900px) {
   .hero {
-    padding: 60px 28px 40px;
-  }
-
-  .hero-stats {
-    grid-template-columns: repeat(2, 1fr);
+    padding: 56px 20px 20px;
   }
 
   .phases-section {
@@ -945,16 +941,19 @@ body {
   }
 
   .hero {
-    padding: 70px 20px 36px;
+    padding: 56px 16px 20px;
   }
 
   .hero-title {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .hero-stats {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 6px;
+  }
+
+  .hero-stat-label {
+    font-size: 9px;
   }
 
   .phases-section {
@@ -989,6 +988,12 @@ body {
 
 .phase-card {
   animation: fade-in 0.5s ease forwards;
+}
+
+@media (max-width: 480px) {
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
