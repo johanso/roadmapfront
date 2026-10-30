@@ -40,7 +40,8 @@ export function Hero({ totalCompleted, onReset }: HeroProps) {
           <span className="hero-title-highlight gradient-text">Senior</span>
         </h1>
         <p className="hero-subtitle">
-          {totalTopics} temas cuidadosamente seleccionados · {curriculum.length} fases · ~{totalDays} días        </p>
+          {totalTopics} temas cuidadosamente seleccionados · {curriculum.length} fases · ~{totalDays} días
+        </p>
 
         <div className="hero-level-badge" style={{ borderColor: level.color, background: `${level.color}15` }}>
           <span style={{ color: level.color }}>Nivel actual: <strong>{level.label}</strong></span>
