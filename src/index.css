@@ -355,21 +355,6 @@ body {
   max-width: 720px;
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(99, 102, 241, 0.12);
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  color: var(--accent);
-  padding: 4px 12px;
-  border-radius: 50px;
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  letter-spacing: 0.02em;
-}
-
 .hero-title {
   font-size: clamp(28px, 3.5vw, 40px);
   font-weight: 900;

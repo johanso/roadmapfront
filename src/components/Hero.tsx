@@ -30,10 +30,6 @@ export function Hero({ totalCompleted, onReset }: HeroProps) {
       </div>
 
       <div className="hero-content">
-        <div className="hero-badge">
-          <span>Frontend Roadmap 2025</span>
-        </div>
-
         <h1 className="hero-title">
           De <span className="hero-title-highlight">Junior</span>
           {' '}a{' '}
