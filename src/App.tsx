@@ -135,7 +135,7 @@ function App() {
 
         <footer className="footer">
           <p><strong>Frontend Senioriti</strong> — Roadmap actualizado 2026</p>
-          <p>Progreso guardado automáticamente en tu navegador</p>
+          <p>Progreso guardado automáticamente en este navegador</p>
         </footer>
       </main>
     </div>
